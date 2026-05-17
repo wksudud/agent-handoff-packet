@@ -12,6 +12,16 @@ Agent-to-agent handoff needs a compact contract.
 A scheduler/translator agent connects the two.
 ```
 
+## Personal View
+
+My personal expectation is that this direction will eventually evolve into a new format designed primarily for AI systems to read, write, patch, and verify.
+
+v0.1 is intentionally not that final format. It is a short, practical sketch: use familiar formats today, collect examples, measure what helps, and let better packet shapes emerge from real multi-agent workflows.
+
+In the long run, AI models could be prompted, fine-tuned, or otherwise adapted to this kind of format so they handle handoff packets more reliably than ad hoc prose. That is a hypothesis and a roadmap, not a claim already proven by this repository.
+
+This project is meant as a starting point. If the idea is useful, others should refine the fields, examples, evaluation methods, compact wire forms, and possible future syntax.
+
 ## Roles
 
 - Human View: a readable Markdown brief for users, reviewers, and maintainers.

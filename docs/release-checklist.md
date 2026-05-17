@@ -24,3 +24,14 @@
 ## Release Position
 
 This repository is ready to publish as a v0.1 draft / research prototype. It should not be marketed as a proven standard yet.
+
+## Project Invitation
+
+This is a short initial idea, not a finished protocol. Contributions are welcome around:
+
+- better examples from real agent workflows;
+- stricter or looser schema variants;
+- compact AI-first syntax experiments;
+- tokenizer-aware wire formats;
+- model prompting or fine-tuning experiments;
+- paired benchmarks against ordinary prose handoffs.
