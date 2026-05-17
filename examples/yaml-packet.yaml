@@ -1,0 +1,26 @@
+packet_type: handoff
+goal: Draft the first public README for a pragmatic agent handoff contract.
+target_agent: writer
+constraints:
+  - Keep the tone practical and adoption-oriented.
+  - Describe the new AI-native format as a future roadmap item.
+inputs:
+  - docs/principles.md
+  - docs/roadmap-new-format.md
+expected_outputs:
+  - README quickstart.
+  - Compatibility explanation.
+acceptance:
+  - README names Human View, Agent Packet, and Scheduler/Translator Agent.
+  - README explains Multica-style and DeerFlow-style compatibility.
+failure_boundary:
+  - Do not imply the project is a formal standard.
+  - Do not publish externally without confirmation.
+return_required:
+  - status
+  - changed_paths
+  - verification
+  - blockers
+  - handoff_summary
+human_brief: >
+  Write the README as a bridge between existing formats and future AI-native handoff.

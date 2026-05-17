@@ -1,0 +1,30 @@
+packet_type: handoff
+goal: Demonstrate a DeerFlow-style plan-execute-review-report packet chain.
+target_agent: executor
+constraints:
+  - Planner must provide bounded task context.
+  - Executor must return evidence, not just prose.
+  - Reviewer must verify acceptance before reporter summarizes.
+inputs:
+  - planner_output
+  - artifact_manifest
+expected_outputs:
+  - executor_result
+  - reviewer_verification
+  - reporter_human_summary
+acceptance:
+  - Planner packet can be consumed by executor without full history.
+  - Reviewer can determine pass or fail from returned fields.
+  - Reporter can render a concise human view.
+failure_boundary:
+  - Stop if the packet omits acceptance criteria or return requirements.
+return_required:
+  - status
+  - artifacts
+  - verification
+  - blockers
+  - handoff_summary
+human_brief: >
+  Use AHP as the payload convention across planner, executor, reviewer, and reporter roles.
+notes:
+  - DeerFlow is modeled here as a workflow pattern: planner, executor, reviewer, reporter.

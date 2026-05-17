@@ -1,0 +1,34 @@
+{
+  "packet_type": "handoff",
+  "goal": "Review AHP examples for contract completeness.",
+  "target_agent": "reviewer",
+  "constraints": [
+    "Focus on missing required fields and unclear return contracts.",
+    "Do not rewrite examples unless a validation issue requires it."
+  ],
+  "inputs": [
+    "examples/markdown-packet.md",
+    "examples/yaml-packet.yaml",
+    "examples/multica-style.yaml",
+    "examples/deerflow-style.yaml"
+  ],
+  "expected_outputs": [
+    "Review findings.",
+    "Validation evidence."
+  ],
+  "acceptance": [
+    "Every example has goal, constraints, acceptance, failure_boundary, and return_required.",
+    "Reviewer reports any ambiguity as a blocker."
+  ],
+  "failure_boundary": [
+    "Stop before changing public positioning or protocol claims."
+  ],
+  "return_required": [
+    "status",
+    "changed_paths",
+    "verification",
+    "blockers",
+    "handoff_summary"
+  ],
+  "human_brief": "Review the packet examples and confirm the v0.1 contract is present."
+}

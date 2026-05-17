@@ -1,0 +1,31 @@
+packet_type: context
+goal: Route an implementation task through a Multica-style scheduler without passing full chat history.
+target_agent: M-Pro scheduler to execution lane
+constraints:
+  - Build or check a ContextPacket before delegation.
+  - Preserve formal runtime data.
+  - Keep experiments under runtime/experiments.
+inputs:
+  - requirements.md
+  - technical-design.md
+  - ops/acceptance.md
+expected_outputs:
+  - ContextPacket for the execution agent.
+  - Handoff summary for M-Pro.
+acceptance:
+  - Packet includes goal, constraints, acceptance, failure boundary, file whitelist, and return requirements.
+  - Execution agent receives compact context instead of full chat history.
+failure_boundary:
+  - Stop before changing remote agent or skill configuration.
+  - Stop before destructive filesystem operations.
+return_required:
+  - status
+  - changed_paths
+  - verification
+  - assumptions
+  - blockers
+  - handoff_summary
+human_brief: >
+  M-Pro translates the human task into a compact ContextPacket and routes it to the right execution lane.
+notes:
+  - This is a compatibility example, not a dependency on Multica internals.

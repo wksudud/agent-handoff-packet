@@ -1,0 +1,20 @@
+{
+  "name": "agent-handoff-packet",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Pragmatic v0.1 contract layer for agent-to-agent handoff packets.",
+  "scripts": {
+    "test": "node tools/test.js",
+    "validate": "node tools/validate.js examples/*",
+    "render": "node tools/render-brief.js examples/markdown-packet.md",
+    "eval": "node tools/evaluate.js"
+  },
+  "keywords": [
+    "ai-agents",
+    "multi-agent",
+    "handoff",
+    "agent-protocol",
+    "structured-output"
+  ],
+  "license": "MIT"
+}
