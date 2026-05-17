@@ -87,4 +87,4 @@ human_brief: >
 
 A future AI-native syntax may be useful, but v0.1 prioritizes adoption and evidence. The first release uses familiar formats and tests whether the contract shape actually improves handoff quality before freezing a new syntax.
 
-See [docs/principles.md](docs/principles.md), [docs/roadmap-new-format.md](docs/roadmap-new-format.md), [docs/comparison-notes.md](docs/comparison-notes.md), [docs/evaluation.md](docs/evaluation.md), and [docs/release-checklist.md](docs/release-checklist.md).
+See [docs/principles.md](docs/principles.md), [docs/roadmap-new-format.md](docs/roadmap-new-format.md), [docs/comparison-notes.md](docs/comparison-notes.md), [docs/evaluation.md](docs/evaluation.md), [docs/feasibility.md](docs/feasibility.md), and [docs/release-checklist.md](docs/release-checklist.md).
